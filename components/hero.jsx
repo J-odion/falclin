@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import { ArrowRight } from "lucide-react"
 
-export default function Hero() {
+export default function Hero({ first, second}) {
   const heroRef = useRef(null)
 
   useEffect(() => {
@@ -40,20 +40,20 @@ export default function Hero() {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">Premier Logistics & Supply Chain Solutions</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4"> {first}</h1>
           <p className="text-xl text-gray-200 mb-8">
-            Connecting West Africa with swift, secure, and seamless logistics services
+            {second}
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#services"
+              href="/services"
               className="bg-accent hover:bg-accent/90 text-white font-medium py-3 px-6 rounded-md transition-all flex items-center justify-center gap-2 group"
             >
               Our Services
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="bg-transparent border-2 border-white text-white font-medium py-3 px-6 rounded-md hover:bg-white/10 transition-all flex items-center justify-center"
             >
               Contact Us

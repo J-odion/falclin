@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import { MapPin, Phone, Mail, Send } from "lucide-react"
-import Navbar from "@/components/navbar"
+import Hero from "@/components/hero"
 import Footer from "@/components/footer"
 
 export default function Contact() {
@@ -88,17 +88,8 @@ export default function Contact() {
 
   return (
     <main className="min-h-screen">
-      <Navbar />
-
       {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center bg-primary">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-            <p className="text-xl">Get in touch with our logistics experts</p>
-          </div>
-        </div>
-      </section>
+      <Hero first={"Contact Us"} second={"Get in touch with our logistics experts"} />
 
       {/* Contact Form and Info */}
       <section ref={sectionRef} className="py-20">
@@ -106,9 +97,7 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-
               {/* Interactive Communication Animation Section */}
-
               <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center py-6 mb-12">
                   <h2 className="text-3xl font-bold text-primary mb-4">Let’s Connect</h2>

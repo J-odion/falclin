@@ -28,12 +28,11 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Contact", href: "/contact" },
   ]
 
-  const serviceLinks = [
-    { name: "Logistics", href: "/services/logistics" },
-    { name: "Medical Equipment", href: "/services/medical-equipment" },
-  ]
+
 
   return (
     <nav
@@ -62,47 +61,7 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-
-            {/* Services Dropdown */}
-            <div className="relative">
-              <button
-                className={`text-sm font-medium transition-colors hover:text-accent flex items-center gap-1 ${
-                  scrolled ? "text-primary" : "text-white"
-                }`}
-                onClick={() => setServicesOpen(!servicesOpen)}
-                onMouseEnter={() => setServicesOpen(true)}
-              >
-                Services
-                <ChevronDown size={16} className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
-              </button>
-
-              {servicesOpen && (
-                <div
-                  className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 z-50"
-                  onMouseLeave={() => setServicesOpen(false)}
-                >
-                  {serviceLinks.map((link) => (
-                    <Link
-                      key={link.name}
-                      href={link.href}
-                      className="block px-4 py-2 text-sm text-primary hover:bg-gray-50 hover:text-accent transition-colors"
-                      onClick={() => setServicesOpen(false)}
-                    >
-                      {link.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            <Link
-              href="/contact"
-              className={`text-sm font-medium transition-colors hover:text-accent ${
-                scrolled ? "text-primary" : "text-white"
-              }`}
-            >
-              Contact
-            </Link>
+           
           </div>
 
           {/* Mobile Navigation Toggle */}

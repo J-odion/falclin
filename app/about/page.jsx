@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import Image from "next/image"
-import Navbar from "@/components/navbar"
+import Hero from "@/components/hero"
 import Footer from "@/components/footer"
 import FAQ from "@/components/faq"
 
@@ -35,18 +35,10 @@ export default function About() {
 
   return (
     <main className="min-h-screen">
-      <Navbar />
-
       {/* Hero Section */}
-      <section className="relative h-[40vh] flex items-center bg-primary">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">About FALCLIN</h1>
-            <p className="text-xl">Premier logistics and project support provider in West Africa</p>
-          </div>
-        </div>
-      </section>
+      <Hero first={"About FALCLIN"} second={"Premier logistics and project support provider in West Africa"} />
 
+      
       {/* About Content */}
       <section ref={sectionRef} className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6">
@@ -95,6 +87,42 @@ export default function About() {
             <h2 className="section-title text-center">Our Values</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               The principles that guide everything we do at FALCLIN
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">S</span>
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">Swift</h3>
+              <p className="text-gray-600">Fast and efficient delivery of services to meet your urgent needs</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">S</span>
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">Secure</h3>
+              <p className="text-gray-600">Reliable and safe handling of your valuable cargo and equipment</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">S</span>
+              </div>
+              <h3 className="text-xl font-bold text-primary mb-2">Seamless</h3>
+              <p className="text-gray-600">Smooth operations with minimal disruption to your business</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Company Partners */}
+      <section className="py-20">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center mb-12">
+            <h2 className="section-title text-center">Our Partners</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              At FALCLIN our partners are curtial to our success
             </p>
           </div>
 
