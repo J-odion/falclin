@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react"
 import Link from "next/link"
-import { Truck, Heart, ArrowRight } from "lucide-react"
+import { Truck, Ship, ArrowRight } from "lucide-react"
 
 export default function FeaturedServices() {
   const sectionRef = useRef(null)
@@ -39,16 +39,16 @@ export default function FeaturedServices() {
       description:
         "Comprehensive supply chain management, freight forwarding, and warehousing services across West Africa.",
       icon: <Truck className="h-12 w-12 text-accent" />,
-      link: "/services/logistics",
-      features: ["Supply Chain Management", "Freight Forwarding", "Warehousing", "Cold Chain Logistics"],
+      link: "/services",
+      features: ["Transportation Management(Road, Sea, and Air Frieght", "Export, Import, Custos Clearance", "Dangerous Goods Shipping", "Loading, Off loading, Crating & Packaging", "Health & Industrial Equipment Distribution and Installation", "Moving Services", "Last Mile Deliveries", "lots more..."],
     },
     {
-      title: "Medical Equipment",
+      title: "Vessel Management",
       description:
-        "Specialized logistics and support for advanced medical equipment including Linear Accelerators (LINACs).",
-      icon: <Heart className="h-12 w-12 text-accent" />,
-      link: "/services/medical-equipment",
-      features: ["LINAC Installation", "Medical Transport", "Technical Support", "Staff Training"],
+        "Commercial & operational vessel management with port operations expertise",
+      icon: <Ship className="h-12 w-12 text-accent" />,
+      link: "/services",
+      features: ["Marine Engineering/Naval Architectural Services", "Marine Technical/Construction Consultancy", "Vessel Management and Leasing", "Marine Survey/Survellience and Secirity Services","Engineering Procurement and sales", "Research & dDevelopment (R&D)", "Engineering Consultancy Services"],
     },
   ]
 

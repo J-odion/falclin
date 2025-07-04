@@ -39,16 +39,16 @@ export default function LogisticsServices() {
 
   const logisticsServices = [
     {
-      title: "Supply Chain Management",
+      title: "Export, Import & Customs Clearance",
       description: "End-to-end supply chain solutions with advanced tracking and forecasting systems",
       icon: <Globe className="h-8 w-8 text-accent" />,
-      features: ["SCM software integration", "Real-time tracking", "Demand forecasting", "Inventory optimization"],
+      features: ["SCM software integration", "Real-time tracking", "Customs clearance", "Documentation handling", "Demand forecasting", "Inventory optimization"],
     },
     {
-      title: "Freight Forwarding",
+      title: "Transportation Management",
       description: "Air, sea, and road freight services with customs clearance expertise",
       icon: <Truck className="h-8 w-8 text-accent" />,
-      features: ["Multi-modal transportation", "Customs clearance", "Documentation handling", "Route optimization"],
+      features: ["Multi-modal transportation", "Route optimization"],
     },
     {
       title: "Vessel Management",
@@ -57,7 +57,7 @@ export default function LogisticsServices() {
       features: ["Port operations", "Chartering services", "Crew management", "Compliance monitoring"],
     },
     {
-      title: "Warehousing Solutions",
+      title: "Warehouse and Inventory Management",
       description: "Modern warehousing facilities with inventory management systems",
       icon: <Warehouse className="h-8 w-8 text-accent" />,
       features: ["Climate-controlled storage", "Inventory management", "Pick & pack services", "Distribution"],
@@ -85,6 +85,30 @@ export default function LogisticsServices() {
       description: "Efficient last-mile delivery solutions for urban and rural areas",
       icon: <Clock className="h-8 w-8 text-accent" />,
       features: ["Urban delivery", "Rural access", "Real-time tracking", "Flexible scheduling"],
+    },
+    {
+      title: "Rental Services",
+      description: "Air, sea, and road freight services with customs clearance expertise",
+      icon: <Truck className="h-8 w-8 text-accent" />,
+      features: ["Multi-modal transportation", "Customs clearance", "Documentation handling", "Route optimization"],
+    },
+    {
+      title: "Consultancy & Project Management",
+      description: "Air, sea, and road freight services with customs clearance expertise",
+      icon: <Truck className="h-8 w-8 text-accent" />,
+      features: ["Multi-modal transportation", "Customs clearance", "Documentation handling", "Route optimization"],
+    },
+    {
+      title: "Procurement & E-commerce",
+      description: "Air, sea, and road freight services with customs clearance expertise",
+      icon: <Truck className="h-8 w-8 text-accent" />,
+      features: ["Multi-modal transportation", "Customs clearance", "Documentation handling", "Route optimization"],
+    },
+    {
+      title: "Haulage/Distribution (Long Haul and Last Mile)",
+      description: "Air, sea, and road freight services with customs clearance expertise",
+      icon: <Truck className="h-8 w-8 text-accent" />,
+      features: ["Multi-modal transportation", "Customs clearance", "Documentation handling", "Route optimization"],
     },
   ]
   const services = [
