@@ -10,7 +10,7 @@ export default function Greetings() {
             {/* Image */}
             <div className="relative h-[280px] md:h-full">
               <img
-                src="grettings.JPEG"
+                src="grettings.jpeg"
                 alt="Joseph M. Brown, Board Chair"
                 className="absolute inset-0 w-full h-full object-cover object-center"
               />
