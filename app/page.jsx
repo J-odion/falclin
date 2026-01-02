@@ -7,6 +7,7 @@ import LoadingSpinner from "@/components/loading-spinner"
 import Footer from "@/components/footer"
 import FeaturedServices from "@/components/featured-services"
 import WhyChooseUs from "@/components/why-choose-us"
+import Greetings from "@/components/greetings"
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -29,6 +30,7 @@ export default function Home() {
       <FeaturedServices />
       <Gallery />
       <WhyChooseUs />
+      <Greetings />
       <Footer />
     </main>
   )
